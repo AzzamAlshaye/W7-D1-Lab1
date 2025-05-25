@@ -2,11 +2,16 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import Router from "./Router/router";
+
+import Calculator from "./pages/Calc";
 function App() {
   return (
     <>
-      <Router />
+      <div className="className= min-h-screen bg-gray-100 flex items-center justify-center">
+        <main className="flex-grow">
+          <Calculator />
+        </main>
+      </div>
     </>
   );
 }
